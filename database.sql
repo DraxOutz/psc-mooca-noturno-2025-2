@@ -14,6 +14,7 @@ CREATE TABLE IF NOT EXISTS Pessoa (
 
 -- 🔸 Consulta todos os registros da tabela "Pessoa"
 SELECT * FROM Pessoa;
+SELECT id,email from Pessoa;
 
 -- 🔸 Insere um novo registro na tabela "Pessoa"
 -- "IGNORE" evita erro caso o email já exista (por ser UNIQUE)
