@@ -26,5 +26,7 @@ UPDATE Pessoa
 SET telefone = '(11) 99876-5432'
 -- Aplica a mudança apenas para a pessoa com este e-mail específico
 WHERE email = 'Marto@gmail.com';
+
+
 -- 🔸 Remove o registro da pessoa com o email especificado
 DELETE FROM Pessoa WHERE email = "Marto@gmail.com";
