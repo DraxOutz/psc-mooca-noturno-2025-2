@@ -20,5 +20,11 @@ SELECT * FROM Pessoa;
 INSERT IGNORE INTO Pessoa (nome, email, telefone) 
 VALUES ("Marto", "Marto@gmail.com", "(11) 91234-5678");
 
+-- Atualiza o campo "telefone" de um registro específico na tabela "Pessoa"
+UPDATE Pessoa
+-- Define o novo valor do campo "telefone"
+SET telefone = '(11) 99876-5432'
+-- Aplica a mudança apenas para a pessoa com este e-mail específico
+WHERE email = 'Marto@gmail.com';
 -- 🔸 Remove o registro da pessoa com o email especificado
 DELETE FROM Pessoa WHERE email = "Marto@gmail.com";
